@@ -1,3 +1,5 @@
+Jan 9th 2025
+
 1.  javac <classname.java>
 2. 객체단위로 운영되는 프로그램.
 3. public class Hello {
@@ -11,5 +13,5 @@
 5. JavaSE 프로그램에서 프로그램의 진입점이며 가장 먼저 실행되는 메서드의 이름은?
 => Main.
 6. JVM (Java Virtual Machine) 이란 무엇인가?
-=> JVM은 JavaVirtual Machine의 줄임말로 wirte once, run everywhere 즉 OS마다 따로 코드를 작성해야 하는 번거로움 업이 Java가 플랫폼에 독립적일 수 있게 만들어준다.
+=> JVM은 JavaVirtual Machine의 줄임말로  OS마다 따로 코드를 작성해야 하는 번거로움 업이 Java가 플랫폼에 독립적일 수 있게 만들어준다.
 JVM은 Java 클래스 파일을 로드하고 바이트 코드를 해석하며, 메모리 등의 자원을 할당하고 관리하며 정보를 처리하는 작업을 하는 프로그램이다.
