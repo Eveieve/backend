@@ -1,3 +1,5 @@
+package day01;
+
 public class ex5 {
     public static void main(String[] args) {
         System.out.println("서식 문자로 출력하는 방법입니다.\n" +

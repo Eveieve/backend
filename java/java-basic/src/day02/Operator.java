@@ -14,7 +14,5 @@ public class Operator {
         return total;
     }
 
-    public static int mean() {
 
-    }
 }
