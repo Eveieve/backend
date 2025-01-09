@@ -32,4 +32,6 @@ public class IntegerLiteralEx {
 
         System.out.printf("%d %d %d %d", var1, var2, var3, var4);
     }
+
+
 }
