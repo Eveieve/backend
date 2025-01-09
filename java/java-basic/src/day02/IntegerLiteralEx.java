@@ -22,12 +22,14 @@ public class IntegerLiteralEx {
         // 179 16진수
 
         int var1 = 0b1011;
-        System.out.println(var1);
+
         int var2 = 0206; // 8진수는 앞에 0붙이기.
-        System.out.println(var2);
+
         int var3 = 365;
-        System.out.println(var3);
+
         int var4 = 0xB3;
-        System.out.println(var4);
+
+
+        System.out.printf("%d %d %d %d", var1, var2, var3, var4);
     }
 }
