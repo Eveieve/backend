@@ -1,4 +1,4 @@
-package 정올.배열1;
+package jungol.Array;
 
 public class Playground {
     public static void main(String[] args) {

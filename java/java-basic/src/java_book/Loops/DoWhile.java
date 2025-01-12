@@ -1,4 +1,4 @@
-package java_book.반복문;
+package java_book.Loops;
 
 // 6.3 do while 문
 public class DoWhile {

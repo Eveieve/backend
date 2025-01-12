@@ -1,4 +1,4 @@
-package java_book.반복문;
+package java_book.Loops;
 
 // 6.4 문장의 중첩
 public class NestingFor {

@@ -1,8 +1,8 @@
-package 정올.선택제어문;
+package jungol.Control_Flow;
 
 import java.util.Scanner;
 
-public class 자가1 {
+public class Assess1 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

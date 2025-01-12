@@ -1,8 +1,8 @@
-package 정올.선택제어문;
+package jungol.Control_Flow;
 
 import java.util.Scanner;
 
-public class 연습2 {
+public class Practice2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,6 +10,7 @@ public class 연습2 {
         int in2 = sc.nextInt();
 
         int bigger, smaller;
+
         if (in2 >= in) {
             bigger = in2;
             smaller = in;
@@ -19,6 +20,5 @@ public class 연습2 {
         }
         System.out.printf("입력받은 수 중 큰 수는 %d이고 작은 수는 %d입니다", bigger, smaller);
     }
-
 
 }
