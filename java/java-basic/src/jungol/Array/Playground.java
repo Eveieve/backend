@@ -15,6 +15,4 @@ public class Playground {
             System.out.println((i+1) + "번째 사람의 점수는 " + test[i] + "입니다.") ;
         }
     }
-
-
 }
