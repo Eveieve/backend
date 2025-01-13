@@ -4,24 +4,16 @@ import java.util.Scanner;
 
 public class Assess5 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num1 = sc.nextInt();
-        int num2 = sc.nextInt();
+        Scanner scanner = new Scanner(System.in);
 
-        int say = 0;
-        int say2 = 0;
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
 
-        if(num1 == num2){
-            say = 1;
-            say2 = 0;
-        } else{
-            say = 0;
-            say2 = 1;
-        }
+        int res1 = (a == b) ? 1 : 0;
+        int res2 = (a != b) ? 1 : 0;
 
-        System.out.println(say);
-        System.out.println(say2);
-
+        System.out.println(res1);
+        System.out.println(res2);
 
     }
 }
