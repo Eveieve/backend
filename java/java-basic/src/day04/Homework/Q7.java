@@ -9,7 +9,7 @@ public class Q7 {
     if(Double.isNaN(y))
         System.out.println("0.0으로 나눌 수 없습니다.");
     else{
-        double = result = z + 10;
+        double result = z + 10;
         System.out.println("결과 " + result);
     }
     }

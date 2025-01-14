@@ -9,5 +9,6 @@ public class Q3 {
         System.out.println(pencilsPerStudent);
 
         int pencilsLeft = 534 - (students * pencilsPerStudent);
+        System.out.println(pencilsLeft);
     }
 }

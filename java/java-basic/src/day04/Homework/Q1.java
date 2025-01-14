@@ -7,6 +7,6 @@ public class Q1 {
         int z = (++x) + (y--);
         System.out.println(z);
 
-        // asnwer : 31
+        //  31
     }
 }
