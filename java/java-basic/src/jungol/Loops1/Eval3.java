@@ -9,7 +9,7 @@ public class Eval3 {
         Scanner sc = new Scanner(System.in);
 
         int sum = 0;
-        float avg = 0.0f;
+        double avg = 0.0f;
         int nums = 0;
 
          // double 의 default는? 0.0
@@ -23,11 +23,15 @@ public class Eval3 {
             }
             sum = sum + num;
             nums = nums + 1;
-            avg = (float) sum/nums;
+            avg = (double) sum/nums;
 
         }
+
         System.out.printf("sum : %d\n", sum);
-                System.out.printf("avg : %f", Math.round(avg * 10) / 10.0); // 소수점 첫째자리까지 반올림.
+        System.out.printf("avg : %.1f", avg); // 첫째자리 까지 반올림하고 싶으면 .1f, 둘째자리까지 원하면 .2f
+
+
+        //System.out.printf("avg : %f", Math.round(avg * 100.0) / 100.0); // 소수점 첫째자리까지 반올림.
 //        System.out.printf("avg : %s", df.format(avg));
 }
 }
