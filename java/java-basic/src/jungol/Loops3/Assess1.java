@@ -18,9 +18,7 @@ public class Assess1 {
             if (i % 2 == 1) {
                 count += 1;
                 total += i;
-
             }
-
             if(total>=n)
                 break;
         }

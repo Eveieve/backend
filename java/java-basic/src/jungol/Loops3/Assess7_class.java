@@ -1,6 +1,7 @@
 package jungol.Loops3;
 
 import java.util.Scanner;
+// 554
 
 public class Assess7_class {
     public static void main(String[] args) {
