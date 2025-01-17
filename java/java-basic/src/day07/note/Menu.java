@@ -1,6 +1,7 @@
 package day07.note;
 
 import java.util.Scanner;
+// Jan 17th
 
 public class Menu {
     public static void main(String[] args) {
