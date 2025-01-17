@@ -12,7 +12,7 @@ package day08_0117.IO;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class baek11021 {
+public class BufferedWriterEx {
     public static void main(String[] args) throws IOException {
         // 일정한 크기 데이터를 버퍼라는 곳에 저수지처럼 받아놓는다. (스트리밍 서비스)
         // 문자를 처리하는 필터 클래스 = BufferedReader 클래스.
