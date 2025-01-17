@@ -2,16 +2,16 @@ package day08_0117;
 
 // 1. 3
 // 2. 3
-// 3.4
+// 3. 4
 // 4. 2
 // 5. 3
 
 public class Homework1_8 {
     public static void main(String[] args) {
-        // 6번
-        // number6();
 
-        number8();
+      number6();
+      number7();
+      number8();
     }
 
     public static void number6() {
