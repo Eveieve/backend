@@ -7,14 +7,16 @@ public class Assess4_class {
 
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
-        for(int row =0; row <n ; row++) {
-            for(int column =0; column <= row; column++){
-                System.out.println(" ");
+
+        for (int row = 0; row < n; row++) {
+            for (int column = 0; column < row; column++) {
+                System.out.print("A");
             }
-            for(int star =0; star<n -row; star++) {
+            for (int star = 0; star < n - row; star++) {
                 System.out.print("*");
             }
             System.out.println();
         }
+
     }
 }
