@@ -24,7 +24,5 @@ public class Prac7 {
             }
             System.out.println(evenMax);
         }
-
-
     }
 }

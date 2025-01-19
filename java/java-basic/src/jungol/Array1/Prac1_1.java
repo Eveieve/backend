@@ -2,29 +2,25 @@ package jungol.Array1;
 
 import java.util.Scanner;
 
-// not passed
 public class Prac1_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        //int n = sc.nextInt();
-// 입력 받은 수들을 배열에 넣기
+        // 배열을 사용하여 5개의 정수를 저장
+        int[] numbers = new int[5];
 
-        int count = 0;
+        // 사용자로부터 5개의 정수 입력받기
+        //System.out.println("5개의 정수를 입력하세요:");
+        for (int i = 0; i < 5; i++) {
+            numbers[i] = sc.nextInt();
+        }
 
-        // arr is the name of array
-        while (count <= 4) {
-            int n = sc.nextInt();
+        // 입력받은 정수들 출력하기
+        //System.out.println("입력한 정수들은:");
+        for (int i = 0; i < 5; i++) {
+            System.out.print(numbers[i]+ " ");
+        }
 
-            count++;
-            int[] arr = new int[n];
-            for (int i = 0; i < n - 1; i++) {
-                arr[i] = n;
-                System.out.print(arr[i]);
-            }
-
-        } // 5개 정수 입력 받음.
-
-
+        //sc.close(); // Scanner 객체 닫기
     }
 }

@@ -44,7 +44,5 @@ public class StringBufferEx {
         System.out.println(number);
 
 
-
-
     }
 }
