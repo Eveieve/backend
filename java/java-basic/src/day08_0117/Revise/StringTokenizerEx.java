@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 public class StringTokenizerEx {
     public static void main(String[] args) {
 
-        String str = "You are doing great";
+        String str = "Welcome to java programming";
 
         StringTokenizer token = new StringTokenizer(str);
 

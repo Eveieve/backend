@@ -1,6 +1,6 @@
 package day08_0117;
 
-// StringBuilder vs StringBuffer perofrmance test
+// StringBuilder vs StringBuffer performance test
 
 public class StringPerformance {
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class StringPerformance {
 
                 System.out.println("StringBuffer.length: " + stringBuffer.length());
                 System.out.println("StringBuilder.length: " + stringBuilder.length()); // 값이 더 적음.
-                // 쓰레드들이 동시에 접근해서 몇번 십해셔 제대로 실행 안된 결과
+                // 쓰레드들이 동시에 접근해서 제대로 실행 안된 결과
                 // 쓰레드 세이프티 하지 않다: => 쓰레드가 객체에 접근해서 변경하면 기다려주지 않음.
                 // 버퍼는 쓰레드 세이프한 환경 제공함 => 멀티 쓰레드 환경에서, 한쓰레드가 어펜드 실행하고 나서, 다른 쓰레드가 어펜드하지 하지 못하게 한다. 순차적으로 실행하게 해준다.
             } catch(InterruptedException e ){

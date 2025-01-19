@@ -1,14 +1,13 @@
-package day08_0117;
+package day08_0117.Revise;
 
-public class MultiArray {
+public class MultiArrayEx {
     public static void main(String[] args) {
-        // 정수형 2차원 배열 생성
+
         int[][] scores = {
                 {80, 90, 96}, // scores[0]
                 {76, 88} // scores[1]
         };
 
-        // 1차원 배열의 길이(반의 수)
         System.out.println(scores.length + "scores[0]" + "scores[1]");
         System.out.println(scores[0][0]); // 80
         System.out.println(scores[1][1]); // 88
@@ -18,9 +17,7 @@ public class MultiArray {
                 System.out.println(scores[ban][student]);
         }
 
-        /// ///////////
-        // for each 로 만드는 연습
-
+        /// /////////// Use Enhanced For
 
 //        for (int i = 0; i < scores[1].length; i++) {
 //            sum += scores[1][i];
