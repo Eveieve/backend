@@ -1,13 +1,13 @@
 package day08_0117;
 
-// StringTokenzer 클래스
+// StringTokenizer 클래스
 // 구분자를 기준으로 토큰이라는 여러개의 문자열로 잘라낼때 사용
 
 import java.util.StringTokenizer;
 
 public class StringTokenEx {
     public static void main(String[] args) {
-        String str = "Welcome Java Programming";
+        String str = "Welcome to Java Programming";
 
         StringTokenizer st = new StringTokenizer(str); // str의 첫번째 인덱스 주소값을 저장해놨을거임
 
