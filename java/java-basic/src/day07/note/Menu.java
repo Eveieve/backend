@@ -7,15 +7,13 @@ public class Menu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("당신의 이름을 입력하세요: ");
+        String name = sc.nextLine();
+        System.out.print("연락처를 입력하세요: ");
+        String phone = sc.nextLine();
+        // 이거왜 입력안되는거지
         while (true) {
-            System.out.print("당신의 이름을 입력하세요: ");
-            String name = sc.nextLine();
-            System.out.print("연락처를 입력하세요: ");
-            String phone = sc.nextLine();
-            // 이거왜 입력안되는거지
-
             welcome();
-
             showMenu();
 
             System.out.print("메뉴 번호를 선택해주세요: ");
@@ -37,7 +35,6 @@ public class Menu {
                 default:
                     System.out.println("잘못된 입력입니다.");
             }
-
             welcome();
         }
     }

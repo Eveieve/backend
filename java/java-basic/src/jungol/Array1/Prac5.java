@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Prac5 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in)
+        Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.print("YEAR = ");
             int year = sc.nextInt();
@@ -47,5 +47,5 @@ public class Prac5 {
 
         sc.close(); // Scanner 닫기
     }
-    }
+
 }
