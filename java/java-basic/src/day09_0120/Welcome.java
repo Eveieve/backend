@@ -1,13 +1,14 @@
 package day09_0120;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Welcome {
     static final int NUM_BOOK = 3;
-    static final int NUM_ITEM = 7;
+    static final int NUM_ITEM = 8;
 
-    static  String[][] book = new String[NUM_BOOK][NUM_ITEM]; // create book data
-    static  String[][] basket = new String[NUM_BOOK][NUM_ITEM]; // create book data
+    static String[][] book = new String[NUM_BOOK][NUM_ITEM]; // create book data
+    static String[][] basket = new String[NUM_BOOK][NUM_ITEM]; // create book data
 
     static Scanner input = new Scanner(System.in);
 
@@ -15,29 +16,35 @@ public class Welcome {
 
 
         /// ////get data redy
-        book[0][0] = "ISBN1234";
-        book[0][1] = "JSP programming";
-        book[0][2] = "27000";
-        book[0][3] = "miyoung song";
-        book[0][4] = "learn JSP programming";
-        book[0][5] = "IT book";
-        book[0][6] = "2018/10/08";
+//        book[0][0] = "ISBN1234";
+//        book[0][1] = "JSP programming";
+//        book[0][2] = "27000";
+//        book[0][3] = "miyoung song";
+//        book[0][4] = "learn JSP programming";
+//        book[0][5] = "IT book";
+//        book[0][6] = "2018/10/08";
+//        book[0][7] = "not added";
+//
+//
+//        book[1][0] = "ISBN1235";
+//        book[1][1] = "Android programming";
+//        book[1][2] = "33000";
+//        book[1][3] = "Jaenam Woo";
+//        book[1][4] = "Great mentoring";
+//        book[1][5] = "IT book";
+//        book[1][6] = "2022/01/22";
+//        book[1][7] = "not added";
+//
+//
+//        book[2][0] = "ISBN1236";
+//        book[2][1] = "Scratch";
+//        book[2][2] = "22000";
+//        book[2][3] = "GwangIl Go";
+//        book[2][4] = "Block coding";
+//        book[2][5] = "Introduction to Computers";
+//        book[2][6] = "2019/06/10";
+//        book[2][7] = "not added";
 
-        book[1][0] = "ISBN1235";
-        book[1][1] = "Android programming";
-        book[1][2] = "33000";
-        book[1][3] = "Jaenam Woo";
-        book[1][4] = "Great mentoring";
-        book[1][5] = "IT book";
-        book[1][6] = "2022/01/22";
-
-        book[2][0] = "ISBN1236";
-        book[2][1] = "Scratch";
-        book[2][2] = "22000";
-        book[2][3] = "GwangIl Go";
-        book[2][4] = "Block coding";
-        book[2][5] = "Introduction to Computers";
-        book[2][6] = "2019/06/10";
 
         System.out.print("Enter your name : ");
 
@@ -51,8 +58,6 @@ public class Welcome {
 
             System.out.print("Choose number : ");
             int num = input.nextInt();
-
-
 
             switch (num) {
                 case 0:
@@ -100,22 +105,20 @@ public class Welcome {
         /// /////////////////
 
 
-
-
         String[][] basket = new String[NUM_BOOK][NUM_ITEM]; // 책 개수 만큼 크기의 장바구니 생성
 
     }
 
 
-    public static void showMenu(){
+    public static void showMenu() {
         String welcomeMsg1 = "\t Welcome to Shopping Mall \t";
         String welcomeMsg2 = "\t Welcome to Book Market!\t ";
         String menu = """             
-                    1. 고객 정보 확인하기               4. 바구니에 항목 추가하기
-                    2. 장바구니 상품 목록 보기           5. 장바구니의 항목 수량 줄이기
-                    3. 장바구니 비우기                  6. 장바구니의 항목 삭제하기
-                    7. 영수증 표시하기                  8. 종료
-                    """;
+                1. 고객 정보 확인하기               4. 바구니에 항목 추가하기
+                2. 장바구니 상품 목록 보기           5. 장바구니의 항목 수량 줄이기
+                3. 장바구니 비우기                  6. 장바구니의 항목 삭제하기
+                7. 영수증 표시하기                  8. 종료
+                """;
         System.out.println();
         System.out.println("*".repeat(50));
         System.out.println(welcomeMsg1);
@@ -123,25 +126,28 @@ public class Welcome {
         System.out.println("*".repeat(50));
         System.out.println(menu);
         System.out.println("*".repeat(50));
-    };
+    }
+
+    ;
 
 
     public static void showBookList(String[][] bookList) {
-        for(int i =0; i< NUM_BOOK; i++){
-            for(int j =0; j < NUM_ITEM; j++){
+        for (int i = 0; i < NUM_BOOK; i++) {
+            for (int j = 0; j < NUM_ITEM; j++) {
                 System.out.print(bookList[i][j] + "|");
 
                 System.out.println(" ");
             }
         }
     }
-    public static void menuGuestInfo(String name, String phone){
+
+    public static void menuGuestInfo(String name, String phone) {
         System.out.println("1.고객 정보 확인하기");
         System.out.println("name : " + name);
         System.out.println("phone : " + phone);
     }
 
-    public static void menuCartItemList(){
+    public static void menuCartItemList() {
         System.out.println("2. 장바구니 상품 목록 보기");
     }
 
@@ -149,20 +155,22 @@ public class Welcome {
         System.out.println("3. 장바구니 비우기");
     }
 
-    public static void menuCartAddItem(String[][] basket, String[][] book, int ISBN ) { // will get 2D array 'book'
+    public static void menuCartAddItem(String[][] basket, String[][] book, int ISBN) { // will get 2D array 'book'
         System.out.println("4. 장바구니에 항목 추가하기");
 
-        //ISBN = input.nextInt(); // get ISBN from user
+        //loop, if not null, add to that box
+        for (int i = 0; i < 3; i++) {
 
-        // if not null, add to that box
-        if(basket[i] =!= null) {
-            basket[i][1] = String.valueOf(ISBN); // get i as well
+            if (basket[i][7].equals("not added")) {
+                basket[i][1] = String.valueOf(ISBN);
+                //basket[i][7] = "added"; // updated to 'added'
+                break;
+            }
         }
-        basket[0][1] = String.valueOf(ISBN); // add book ISBN to its place in 2d array
 
-         //print basket
-        for(int i =0; i< NUM_BOOK; i++){
-            for(int j =0; j < NUM_ITEM; j++){
+        //print basket
+        for (int i = 0; i < NUM_BOOK; i++) {
+            for (int j = 0; j < NUM_ITEM; j++) {
                 System.out.print(basket[i][j] + "|");
 
                 System.out.println(" ");
@@ -170,7 +178,7 @@ public class Welcome {
         }
     }
 
-    public static void menuCartRemoveItemCount(){
+    public static void menuCartRemoveItemCount() {
         System.out.println("5. 장바구니의 항목 수량 줄이기");
     }
 
@@ -187,10 +195,18 @@ public class Welcome {
         quit = true;
     }
 
-//    public static void BookList(){
-//
-//        String[][] book = new String[NUM_BOOK][NUM_ITEM]; // create book data
-//
+    public static void BookList() {
+
+        for (int i = 0; i < NUM_BOOK; i++) {
+            System.out.printf("%d 번째 정보를 입력하세요: %n", i + 1);
+            for (int j = 0; j < NUM_ITEM; i++) {
+                System.out.print("해당 책의 정보를 7번으로 나누어 입력하세요");
+                book[i][j] = input.nextLine();
+            }
+        }
+
+        String[][] book = new String[NUM_BOOK][NUM_ITEM]; // create book data
+
 //        book[0][0] = "ISBN1234";
 //        book[0][1] = "JSP programming";
 //        book[0][2] = "27000";
@@ -214,8 +230,8 @@ public class Welcome {
 //        book[2][4] = "Block coding";
 //        book[2][5] = "Introduction to Computers";
 //        book[2][6] = "2019/06/10";
-//    }
+    }
 
-    public static void addBookToBasket(String[][] bookList, String[][] basket, int ISBN){
+    public static void addBookToBasket(String[][] bookList, String[][] basket, int ISBN) {
     }
 }
