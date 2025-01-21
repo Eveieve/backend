@@ -1,13 +1,17 @@
 package day10_0121;
 
+import day10_0121.DTO.Person;
+
 public class PersonMain {
     public static void main(String[] args) {
         Person Alice = new Person(); // 디폴트 생성자는 클래스를 인스턴스할때 반드시 필요하다. 클래스를 메모리에 로드해서 (mount)띄어주는 역할. 메모리를 생성하는 역할. 반드시 클래스 이름과 같아야 한다.
         Alice.setName("Alice"); // use setter if 'name'variable is set as 'private'.
         //Alice.name = "Alice"; // this is possible if name is set just declared 'String name;'
 
-        Alice.age = 29;
-        Alice.phone = "28182312";
+        // Alice.age = 29;
+        Alice.setAge(29);
+        //Alice.phone = "28182312";
+        Alice.setPhone("22338374283");
         //=> 초기화 시키기.
 
         Person John = new Person("John", 56, "829187312"); // creates memory

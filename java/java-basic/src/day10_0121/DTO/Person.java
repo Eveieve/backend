@@ -1,9 +1,9 @@
-package day10_0121;
+package day10_0121.DTO;
 
 public class Person {
     private String name;
-    int age;
-    String phone;
+    private int age; // 만약 private 아니라면, 다른 패키지(main클래스 함수와 다른곳)에 메인 클래스가 옮겨진다면 에러남. default 는 같은 패키지 않에서만 접근할 수 있다.
+    private String phone;
 
     public String getName() {
         return name;
@@ -63,5 +63,5 @@ public class Person {
 
     public void walk() {
         System.out.println("walk");
-    }
+    } // if you make method private => 내가 가공한대로만 갖다 써 (람다 함수들이 이렇게 함)
 }
