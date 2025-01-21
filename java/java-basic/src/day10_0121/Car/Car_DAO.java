@@ -3,12 +3,9 @@ package day10_0121.Car;
 import day10_0121.DTO.CarDTO;
 
 public class Car_DAO {
-
-    // get CAR DTO as argument
-
     private Car_DTO car_DTO;
-    // create car object from CarDTO
 
+    // create car object from CarDTO
     Car_DTO carDTO = new Car_DTO("santafe");// need to be instanced to use its methods.
 
     // constructor, expecting a DTO object
@@ -17,7 +14,7 @@ public class Car_DAO {
     }
 
     public void insert() {
-        // 생성자로 CarDTO car 정보 넘겨주었으니 insert의 파라미터에 받을 필요 없음.==> hm..
+
         System.out.println(carDTO.getModel() + " : insert one car into the database");
     }
 

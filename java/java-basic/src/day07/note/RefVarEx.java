@@ -36,7 +36,8 @@ public class RefVarEx {
 //        System.out.println(phone4);
 
 //        int[] intArray = null;
-//        intArray[0] = 10; // NullPointerException.런타임 에러. 실행중 발생한 오류 널 상태이기 때문에 int array 에 store 할 수 없다.
+//        intArray[0] = 10; // NullPointerException.런타임 에러.
+//        실행중 발생한 오류 널 상태이기 때문에 int array 에 store 할 수 없다.
 //// => 자바는 프로그램 실행 도중에 발생하는 오류를 예외(Exception)이라고 부른다.
 
         int[] intArray = new int[] {0,0,0,0};
@@ -50,13 +51,16 @@ public class RefVarEx {
             System.out.print(intArray[i]+ " ");
 
         String hobby = "travel"; // 문자열 값이 힙에 보관됨.
-        hobby = null; // 기존 "travel"이라는 문자열이 저장된 heap 영역의 주소값을 지운 것. 참조값을 해제. 관계를 끊어버리는 것.
+        hobby = null;
+        // 기존 "travel"이라는 문자열이 저장된 heap 영역의 주소값을 지운 것.
+        // 참조값을 해제. 관계를 끊어버리는 것.
 
         String kind1 = "car";
         String kind2 = kind1;
         System.out.println(kind2);
-        //System.out.println(kind2.toString());
-        System.out.println(kind2.hashCode() + " " + kind1.hashCode()); // 같은 객체를 가리키고 있음.
+        //System.out.println(kind2.toString()); // redundant
+        System.out.println(kind2.hashCode() + " " + kind1.hashCode());
+        // 같은 객체를 가리키고 있음.
         // Q. hashCode()는 머지?
         // 이 코드 위에 kind1 = null 라 하면, NullPointerException 됨.
 
