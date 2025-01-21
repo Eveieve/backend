@@ -13,7 +13,16 @@ public class LinkedHashMapEx {
 
         map.put("first", "john");
         map.put("second", "jane");
-        map.put("third", "Doe");
+        map.put("third", "doe");
 
+        // Iterate through the map
+        // Order will be based on insertion
+        for(Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
+        // first: john
+        // second: jane
+        // third: doe
     }
 }
