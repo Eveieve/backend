@@ -1,0 +1,27 @@
+
+<싱글톤 패턴 구현 기법 종류>
+어떤목적을 구현하기 위한 코드 : 가장 최적화된 패턴을 상황에 맞게 사용하는 것이 핵심
+그 패턴을 항상 써야합니까?
+=> 당연히 써야 하는건 아님.
+7가지
+1. Eager Initialization
+    한번만 미리 만들어두는 가장 직관적이면서도 심플한 기법.
+    keep - 한번 만들어두고 보관해둔다.
+2. Static block initialization
+    클래스가 로딩되고 클래스 변수가 준비된 후 자동으로 실행되는 블럭
+    static { } (static 블럭 모양). 쓰레드 소멸될때까지 유지되는공간이라 잘 사용하기. 자바에서 많이 사용하지 않음.
+3. Lazy initialization
+   객체 생성에 대한 관리를 내부적으로 처리
+   메서드 호출했을때 인스턴스 변수의 null 유무에 따라 초기화 하거나 있는 걸 반환하는 기법.
+
+4. Thread safe initialization
+     하나씩 하나씩 설정하게끔하겠다.
+     상황에 맞춰 설계하는게 중요.
+5. Double-Checked Locking
+    (volatile)
+    (?)
+6. Bill Pugh Solution
+    Lazy Holder
+    멀티쓰레드 환경에서 안전하게 lazy loading
+    클래스 안에 내부클래스 (holder)만드는것.
+7. Enum 이용
