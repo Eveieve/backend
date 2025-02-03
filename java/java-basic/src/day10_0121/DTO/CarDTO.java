@@ -46,7 +46,8 @@ public class CarDTO {
         this.tire = tire;
     }
 
-    @Override // 이건 굳이 왜 할까? 왜 generator 에 메뉴가 있을까? 그만큼 많이 쓰이는지?
+    @Override // 객체에 대한 정보/설명을 보기 쉽게 나타내기 위해.
+    // overrride 하지 않으면 읽을 수 없는 값이 나옴.
     public String toString() {
         return "CarDTO{" +
                 "model='" + model + '\'' +

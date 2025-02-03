@@ -2,6 +2,7 @@ package day13_0124.addPlan;
 
 class A {
     int aa =10;
+    // access modifier not necessary
     void methodA(){
         System.out.println("A클래스의 메소드 methodA");
     }
@@ -19,8 +20,9 @@ class B extends A {
 
     @Override
     void methodCompute() {
+        // Overrides class A's method
         System.out.println("A클래스의 재정의 메소드 호출");
-        super.methodCompute();
+        super.methodCompute(); // calls class A's methodCompute() method.
         System.out.println("B클래스의 재정의된 메소드 methodCompute");
     }
 }

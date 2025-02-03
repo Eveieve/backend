@@ -23,6 +23,5 @@ public class ArrayListEx {
         // Modify elements
         colors.set(1, "white");
 
-        //
     }
 }
