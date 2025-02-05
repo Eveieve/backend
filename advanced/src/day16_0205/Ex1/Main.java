@@ -28,5 +28,8 @@ public class Main {
 
         System.out.println("MAX VOLUME of RC : " + rc.MAX_VOLUME);
         System.out.println("MIN VOLUME of RC: " + rc.MIN_VOLUME); // 인터페이스에 붙어있는 스태틱 이었음.
+
+        rc.setMute(true); // 디폴트 메소드 호출.
+        rc.setMute(false);
     }
 }

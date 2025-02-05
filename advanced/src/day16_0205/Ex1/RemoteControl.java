@@ -14,4 +14,11 @@ public interface RemoteControl {
     void setVolume(int volume);
     // 인터페이스는 구현부 가진 메소드 어차피 쓸 수 없음. 아니면 디폴트 메소드는 구현부 가능.
 
+    // 기본적인 것들 초기화 하기
+    default void setMute(boolean mute) {
+        if(mute) {
+            System.out.println("set to mute");
+            setVolume(MIN_VOLUME);
+        }
+    }
 }
