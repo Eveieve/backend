@@ -11,14 +11,16 @@ public class Chicken extends Animal implements Cheatable { // extends 와 implem
 
     @Override
     void run(int hours) {
-        this.setDistance(this.getSpeed() * hours);
-        System.out.println("닭의 이동 거리 = " + this.getDistance());
+            this.setDistance(this.getSpeed() * hours);
+            System.out.println("닭의 이동 거리 = " + this.getDistance());
     }
 
     // Override from Cheatable interface
     @Override
-    public void fly() {
-
+    public void fly(int hours) {
         this.setSpeed(this.getSpeed() *2); // 스피드 두배 증가
+        //run(this.getSpeed());
+        this.setDistance(this.getSpeed() * hours);
+        System.out.println("나는 닭의 이동 거리 = " + this.getDistance());
     }
 }
