@@ -23,8 +23,11 @@ public abstract class Animal {
     abstract void run (int hours);
 
     double getDistance(){
+
         return this.distance; // 애니멀로부터 생성된 객체의 디스턴스 리턴.
+
     }
+
 
 
 }
