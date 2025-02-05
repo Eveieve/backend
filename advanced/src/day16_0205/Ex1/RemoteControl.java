@@ -7,6 +7,9 @@ public interface RemoteControl {
     int MAX_VOLUME = 30; // must be initialized.
     int MIN_VOLUME = 0;
 
+    static void changeBattery() {
+    }
+
 
     public void turnOn(); // abstract method
     public void turnOff(); // 인터페이스에서는 abstract 없어도 바디가 없으면 추상메소드.

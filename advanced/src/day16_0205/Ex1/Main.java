@@ -31,5 +31,7 @@ public class Main {
 
         rc.setMute(true); // 디폴트 메소드 호출.
         rc.setMute(false);
+
+        RemoteControl.changeBattery();
     }
 }
