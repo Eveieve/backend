@@ -7,8 +7,11 @@ public interface RemoteControl {
     int MAX_VOLUME = 30; // must be initialized.
     int MIN_VOLUME = 0;
 
+
     public void turnOn(); // abstract method
     public void turnOff(); // 인터페이스에서는 abstract 없어도 바디가 없으면 추상메소드.
+    public void checkVolume();
+    void setVolume(int volume);
     // 인터페이스는 구현부 가진 메소드 어차피 쓸 수 없음. 아니면 디폴트 메소드는 구현부 가능.
 
 }
