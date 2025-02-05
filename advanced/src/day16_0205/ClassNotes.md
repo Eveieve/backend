@@ -21,9 +21,13 @@
    private 메소드
    private static 메소드
 
-
 3.1 public 상수 필드
 인터페이스는 public static final 특성을 갖는 상수필드를 가질 수 있다.
 인터페이스의 필드는 public static final 갖는다.
 상수명(한번 정하면 변할 수 없는 값)
 가장큰값 -> maxValue x   -> MAXVALUE , MAX_VALUE  형태로 선언
+
+실습) 동물(Animal)객체, 동물들은 모두 cry() 기능을 공통으로 가지고 있다.
+애완동물(Pet) 객체, 애완동물들은 모두 play()기능을 공통으로 가지고 있다.
+꼬리(tail) 객체, 모든 동물들은 다양한 길이의 꼬리를 가지고 있다.
+고양이(cat)는 꼬리를 갖고 있으며 울며(cry()), 잘 논다(play()).
