@@ -1,12 +1,12 @@
 package interfaceEx.ex02.CarEx;
 
-import inheritence.ex00.HankookTire;
-import inheritence.ex00.Tire;
+
+package day17_0206.CarEx1;
 
 public class Car {
 
 
-    Tire tire1 = new HankookTire();
+    interfaceEx.ex02.CarEx.Tire tire1 = new HankookTire();
     Tire tire2 = new HankookTire();
 
 

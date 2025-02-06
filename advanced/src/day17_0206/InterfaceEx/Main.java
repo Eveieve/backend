@@ -4,10 +4,10 @@ public class Main {
     public static void main(String[] args) {
         ABCImpl abcImpl = new ABCImpl();
 
-        Interface ia = abcImpl;
+        InterA ia = abcImpl;
         ia.methodA();
         System.out.println();
-        Interface ib = abcImpl;
+        InterB ib = abcImpl;
         ib.methodB();
         // ib.methodA();
 
