@@ -38,12 +38,12 @@ public Factory(String name, int openHour, int closeHour){
     public String getFactoryName(){
 
 
-        return "";
+        return this.name;
     }
 
     public int getWorkingTime() {
-
-        return 0;
+        int workingTime = this.closeHour - this.openHour;
+        return workingTime;
     }
 
     public abstract int makeProducts(char skill);
