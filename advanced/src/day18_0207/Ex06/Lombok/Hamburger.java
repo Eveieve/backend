@@ -95,7 +95,8 @@ public class Hamburger {
         /// 핵심! 최종적으로 BurgerBuilder 객체를 반환하는 메소드 생성하기.
         /// 바깥 클래스인 햄버거에서 객체를 생성하여 돌려준다. (this는 빌더)
         public Hamburger build () {
-                return new Hamburger(this);
+
+            return new Hamburger(this);
         }
 
         }// end of inner class
