@@ -14,8 +14,7 @@ public class HamburgerLotteria {
         System.out.println(Hee); // calls toString() method
 
         Hamburger vegetarian = new Hamburger.BurgerBuilder("wheat", "avocado").addLettuce().addTomato().build(); // 빌드로 마무리@
-        System.out.println(vegetarian
-        );
+        System.out.println(vegetarian);
 
         // 세트 메뉴는 음료가 필수
         Hamburger set = new Hamburger.BurgerBuilder("flat", "avocado", "Coke").addLettuce().addCheese().addBacon().build();
