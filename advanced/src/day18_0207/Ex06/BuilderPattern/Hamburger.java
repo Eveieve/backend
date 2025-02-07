@@ -8,7 +8,7 @@ public class Hamburger {
     // 필수 멤버
     private String bun; // 번 몇개.
     private String patty;
-    private boolean drink;
+    private String drink;
 
     // 선택 멤버
     private boolean cheese;
@@ -24,7 +24,7 @@ public class Hamburger {
         this.cheese = builder.cheese;
         this.lettuce = builder.lettuce;
         this.tomato = builder.tomato;
-
+        this.drink = builder.drink;
     }
 
     // 버거 빌더 스태틱 이너 클래스 - 객체 생성하지 않고 Hamburger.BurgerBuilder 이렇게 부를 수 있도록
