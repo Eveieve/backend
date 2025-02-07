@@ -17,7 +17,8 @@ public class HamburgerLotteria {
         System.out.println(vegetarian
         );
 
-        Hamburger set = new Hamburger.BurgerBuilder("flat", "avocado").addLettuce().addCheese().addBacon().addDrink().build();
+        // 세트 메뉴는 음료가 필수
+        Hamburger set = new Hamburger.BurgerBuilder("flat", "avocado", "Coke").addLettuce().addCheese().addBacon().build();
         System.out.println(set);
     }
 }
