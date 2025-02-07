@@ -17,7 +17,7 @@ class Creature2 {
     public void method() {
         Animal2 animal1 = new Animal2();
 
-        //Getter 없이 내부 클래스의 private멤버 접근
+        //Getter 없이 내부 클래스의 private 멤버 접근
         System.out.println(animal1.name);
 
         //내부 클래스에서 외부 클래스 private 멤버 출력
