@@ -60,7 +60,7 @@ public class Student {
 
         /// build!
         public Student build() {
-            return new Student(this); // oh~~~ 바깥 클래스의 프라이빗 생성자에 빌드 타입을 받도록 파라미터를 설정하기!
+            return new Student(this); // 바깥 클래스의 프라이빗 생성자에 빌드 타입을 받도록 파라미터를 설정하기!
             // 그리고 생성자 안 멤버 초기화는 빌더.멤버 로 초기화 할 수 있음! 받는 아규먼트 값을 (빌더.멤버)에 할당하기!
         }
 

@@ -56,7 +56,6 @@ public class Hamburger {
             this.drink = drink;
         }
 
-
         // 선택적 요소들을 단계적으로 추가할 수있도록 메소드 설계하기.
         public BurgerBuilder addCheese() {
             this.cheese = true; // 치즈 추가하겠다
