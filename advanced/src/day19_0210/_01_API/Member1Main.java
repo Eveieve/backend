@@ -8,7 +8,7 @@ public class Member1Main {
         System.out.println(m1.toString());
 
         Member1 m2 = new Member1("shin", 25);
-        System.out.println(m1.hashCode);
+        System.out.println(m1.hashCode());
 
     }
 }
