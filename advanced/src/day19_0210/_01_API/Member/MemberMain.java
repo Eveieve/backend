@@ -1,4 +1,4 @@
-package day19_0210._01_API;
+package day19_0210._01_API.Member;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package day19_0210._01_API;
+package day19_0210._01_API.Member1;
 
 public class Member1Main {
     public static void main(String[] args) {

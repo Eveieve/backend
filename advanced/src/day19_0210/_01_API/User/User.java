@@ -1,4 +1,4 @@
-package day19_0210._01_API;
+package day19_0210._01_API.User;
 
 // 객체 복수 메소드를 사용하기 위해서는 Cloneable 인터페이스를 구현하여 clone() 메소드를 재정의하여 사용한다.
 
