@@ -11,7 +11,6 @@ public class Main {
 
         System.out.println("==============");
 
-
         //학생만 신청 가능
         Course.registerCourse2(new Applicant<MiddleStudent>(new MiddleStudent()));
         Course.registerCourse2(new Applicant<HighStudent>(new HighStudent()));
