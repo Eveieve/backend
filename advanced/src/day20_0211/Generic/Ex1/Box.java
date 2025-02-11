@@ -1,4 +1,4 @@
-package day20_0211.Generic;
+package day20_0211.Generic.Ex1;
 
 // T 타입.
 // Box 에 답길 객체는 인스턴스화할때 정해줄게 .. 코스트코 카트 같은것...?

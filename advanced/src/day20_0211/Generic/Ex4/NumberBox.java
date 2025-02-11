@@ -1,4 +1,4 @@
-package day20_0211.Generic04;
+package day20_0211.Generic.Ex4;
 
 import java.util.List;
 

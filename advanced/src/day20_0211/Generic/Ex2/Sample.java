@@ -1,4 +1,4 @@
-package day20_0211.Generic02;
+package day20_0211.Generic.Ex2;
 // 어떤 예제지?
 public class Sample {
 

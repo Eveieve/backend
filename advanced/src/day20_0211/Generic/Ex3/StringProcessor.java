@@ -1,4 +1,4 @@
-package day20_0211.Generic03;
+package day20_0211.Generic.Ex3;
 
 public class StringProcessor implements Processor<String>{
     @Override

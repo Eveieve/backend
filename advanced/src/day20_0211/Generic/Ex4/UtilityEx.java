@@ -1,4 +1,4 @@
-package day20_0211.Generic04;
+package day20_0211.Generic.Ex4;
 
 public class UtilityEx {
     // printArray 메소드는 제너릭 덕분에 어떤 타입의 배열도 수용 가능한(T[] array) 유용한 메소드.
