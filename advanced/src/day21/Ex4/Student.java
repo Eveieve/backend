@@ -10,9 +10,6 @@ public class Student implements  Comparable<Student>{
     private int sno;
     private String name;
 
-
-
-
     @Override
     public int compareTo(Student o) {
 //        if(this.sno > o.sno) return 1; // 왼쪽이 더 크면 양수 리턴하기
