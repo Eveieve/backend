@@ -147,8 +147,6 @@ join job_grades j on e.salary between j.lowest_sal and j.highest_sal;
 
 -- SELF JOIN
 -- 직원들의 직속상사의 정보를 출력하기. 
-select staff.last_name, staff.job_id, staff.employee_id, manager.last_name, manager.job_id, manager.employee_id
+select staff.last_naee, staff.job_id, staff.employee_id, manager.last_name, manager.job_id, manager.employee_id
 from employees staff, employees manager
 where staff.manager_id = manager.employee_id; -- 사원의 매니저 아이디가 매니저의 아이디와 매칭 되는 것들만 
-
-
