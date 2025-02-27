@@ -16,11 +16,8 @@ public class UserSelectOne {
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/madangdb?serverTimeZone=Asia/Seoul", "madang", "madang"); // url은 벤더에서 만ㄷ름.
 
             //3. 매개변수화된 SQL 문 작성
-
-
             String query = new StringBuilder()
-                    .append(" SELECT * FROM users ")
-                    //.append(" WHERE userid = ? ")
+                    .append(" SELECT * FROM users ") // 이게 왜 한개
                     .toString();
 
 
@@ -32,15 +29,28 @@ public class UserSelectOne {
             rs =  pstmt.executeQuery();
 
 
-            while (rs.next()) {
-                User user = new User();
-                user.setUserid(rs.getString("userid"));
-                user.setUsername(rs.getString("username"));
-                user.setUserpassword(rs.getString("userpassword"));
-                user.setUserage(rs.getInt("userage"));
-                user.setUseremail(rs.getString("useremail"));
-                System.out.println(user);
-            }
+                         if(rs.next()) { // 첫번째 한 행만 불러옴.
+                 User user = new User();
+                 user.setUserid(rs.getString("userid"));
+                 user.setUsername(rs.getString("username"));
+                 user.setUserpassword(rs.getString("userpassword"));
+                 user.setUserage(rs.getInt("userage"));
+                 user.setUseremail(rs.getString("useremail"));
+                 System.out.println(user);
+
+             } else {
+                 System.out.println("가입된 회원이 아닙니다.");
+             }
+//
+//            while (rs.next()) {
+//                User user = new User();
+//                user.setUserid(rs.getString("userid"));
+//                user.setUsername(rs.getString("username"));
+//                user.setUserpassword(rs.getString("userpassword"));
+//                user.setUserage(rs.getInt("userage"));
+//                user.setUseremail(rs.getString("useremail"));
+//                System.out.println(user);
+//            }
 
 
             //5. PreparedStatement 객체 닫기

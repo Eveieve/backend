@@ -24,7 +24,7 @@ public class UserUpdate {
                     .append(" userpassword = ?")
                     .append(" where userid = ?").toString();
 
-
+            System.out.println(query);
             PreparedStatement pstmt = connection.prepareStatement(query);
             pstmt.setString(1, "12345678910");
             pstmt.setString(2, "mycaptain622");

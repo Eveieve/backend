@@ -22,7 +22,6 @@ public class UserDelete {
 
 
             //3. 매개변수화된 SQL 문 작성
-
             String query = new StringBuilder()
                     .append(" DELETE FROM users ")
                     .append(" where userid = ?").toString();

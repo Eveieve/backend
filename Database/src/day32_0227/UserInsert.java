@@ -21,7 +21,8 @@ public class UserInsert {
 
             // 3. 매개변수화된 SQL문 작성
 
-            String query = "" + "insert into users (userid, username, userpass, userage, useremail) " + "values(?,?,?,?,?);";
+            String query = "" + "insert into users (bno, username, userpassword, userage, useremail) " + "values(?,?,?,?,?);";
+
 
             PreparedStatement pstmt = connection.prepareStatement(query);
             pstmt.setString(1,"thesubstance");
