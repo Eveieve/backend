@@ -1,5 +1,4 @@
--- ABS() - returns the absolute value of a number 
-
+-- ABS() - returns the absolute value of a number
 -- SELECT ABS(number);
 select abs(-10);
 select abs(5);
