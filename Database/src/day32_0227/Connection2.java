@@ -19,7 +19,7 @@ public class Connection2 {
         }catch (SQLException e){
             System.out.println("SQLException");
         } finally {
-            // 연결 성공여부와 관계없이 요청 후에는 닫아줘야 한다.
+            // 연결 성공여부와 관계없이 요청 후에는 닫아줘야 한다. ??
             if(connection != null) {
                 try {
                     connection.close();
