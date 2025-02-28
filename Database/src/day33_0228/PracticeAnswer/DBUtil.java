@@ -1,4 +1,4 @@
-package jdbc.advanced.users;
+package day33_0228.PracticeAnswer;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

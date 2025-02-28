@@ -1,6 +1,6 @@
-package jdbc.advanced.users;
+package day33_0228.PracticeAnswer;
 
-import jdbc.boards.Board;
+//import jdbc.boards.Board;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -120,7 +120,7 @@ public class User_Management_Service {
                     .append(" VALUES(?,?,?,?,?);").toString();
 
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1, memId);
+            pstmt.setString(1, memId); // 자동으로 설정됨?
             pstmt.setString(2, memName);
             pstmt.setString(3, memPass);
             pstmt.setString(4, memTel);
