@@ -1,4 +1,4 @@
-use ssgdb;
+use ssg;
 
 CREATE TABLE usertbl -- 회원 테이블
 ( userID  	CHAR(8) NOT NULL PRIMARY KEY, -- 사용자 아이디(PK)
