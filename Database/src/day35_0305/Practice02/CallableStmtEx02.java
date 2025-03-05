@@ -1,11 +1,11 @@
 package day35_0305.Practice02;
 
-import day35_0305.CallableStatement.CallableStmtEx01;
+import day35_0305.Practice02Answer.DBUtil;
 
 import java.sql.SQLException;
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.sql.SQLException;
+
 public class CallableStmtEx02 {
     public static void main(String[] args) throws SQLException {
 

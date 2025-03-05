@@ -1,4 +1,6 @@
-
+-- 저장 프로시저 SP_MEMBER_INSERT
+use ssg;
+drop procedure SP_MEMBER_INSERT;
 create table tb_member
 (
     m_sq         int auto_increment primary key,
@@ -14,11 +16,6 @@ create table tb_member
 insert into tb_member (m_userid, m_pwd, m_email, m_hp)
 values ('apple', '1234', 'apple@gmail.com', '0102910');
 
-select *
-from tb_member;
-
-drop procedure SP_MEMBER_INSERT;
--- 저장 프로시저 SP_MEMBER_INSERT
 
 DELIMITER $$
 DROP PROCEDURE IF EXISTS SP_MEMBER_INSERT $$
@@ -34,7 +31,7 @@ BEGIN
     DECLARE v_count int;
 
     -- 중복사용자 예외 처리
-    SELECT COUNT(m_seq) into v_count FROM TB_MEMBER WHERE m_userid = V_USERID;
+    SELECT COUNT(m_sq) into v_count FROM TB_MEMBER WHERE m_userid = V_USERID;
 
     IF v_count > 0 then
         SET RTN_CODE = 100; -- 이미 존재하는 사용자 있다.
@@ -54,6 +51,3 @@ DELIMITER ;
 SET @RTN_CODE = 0;
 CALL SP_MEMBER_INSERT('winter','1234','winter@gmail.com','010-8989-9333' ,@RTN_CODE);
 SELECT @RTN_CODE;
-
-
-
