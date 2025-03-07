@@ -1,6 +1,5 @@
 package day35_0305.CallableStatement;
 
-import javax.imageio.stream.ImageInputStream;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;

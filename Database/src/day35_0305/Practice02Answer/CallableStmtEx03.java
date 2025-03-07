@@ -1,7 +1,4 @@
 package day35_0305.Practice02Answer;
-
-
-
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;

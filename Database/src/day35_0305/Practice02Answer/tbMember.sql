@@ -49,5 +49,5 @@ DELIMITER ;
 
 -- MYSQL 프로시저를 통해 INSERT 실행
 SET @RTN_CODE = 0;
-CALL SP_MEMBER_INSERT('winter','1234','winter@gmail.com','010-8989-9333' ,@RTN_CODE);
+CALL SP_MEMBER_INSERT('winter', '1234', 'winter@gmail.com', '010-8989-9333', @RTN_CODE);
 SELECT @RTN_CODE;
